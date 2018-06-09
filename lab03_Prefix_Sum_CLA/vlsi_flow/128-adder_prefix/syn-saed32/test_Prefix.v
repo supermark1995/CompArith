@@ -1,0 +1,71 @@
+`timescale 1ns/1ps
+
+
+module test_Prefix;
+
+reg			clk;
+
+initial clk=0;
+always #5 clk=~clk;
+
+reg		enable;
+reg		[127:0]		A;
+reg		[127:0]		B;
+wire		[127:0]		sum;
+wire				carry;
+
+
+adder_128bit_Prefix Prefix_CLA_adder (
+	.A(A),
+	.B(B),
+	.Sum (sum),
+	.Cout(carry),
+	.enable (enable),
+	.clk (clk)
+);
+
+reg		[31:0]		sim_cycle;
+
+initial begin
+	$vcdplusfile("sim.vpd");
+	$vcdpluson;
+
+	@(posedge clk);
+	sim_cycle = 0;
+
+	while (sim_cycle<20) begin
+		@(posedge clk);
+		#1;
+		case (sim_cycle)
+			0: begin
+				enable = 1'b1;
+				A = 128'hF123456789ABCDEFF123456789ABCDEF;
+				B = 128'h23456789ABCDEF1223456789ABCDEF12;
+			end
+
+			1: begin
+				enable = 1'b1;
+				A = 128'h0123456789ABCDEF0123456789ABCDEF;
+				B = 128'hFEDCBA9876543210FEDCBA9876543210;
+			end
+			default: begin
+				enable = 1'b0;
+				A = 128'h0000;
+				B = 128'h0000;			
+			end
+		endcase
+
+		#7;
+		$display ("%d: sum ='h%h", sim_cycle, sum);
+
+		sim_cycle = sim_cycle+1;
+	end
+
+	$finish(1);
+end
+
+endmodule
+
+
+
+
