@@ -1,0 +1,1852 @@
+*SPEF "IEEE 1481-1999"
+*DESIGN "acc"
+*DATE "Fri Mar 23 15:15:06 2018"
+*VENDOR "SYNOPSYS INC"
+*PROGRAM "Synopsys Design Compiler"
+*VERSION "J-2014.09-SP1"
+*DESIGN_FLOW "SYNTHESIS"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1.0 NS
+*C_UNIT 0.0001 PF
+*R_UNIT 10000.0 KOHM
+*L_UNIT 1.0 HENRY
+
+*PORTS
+
+enable I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[31\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[30\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[29\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[28\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[27\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[26\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[25\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[24\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[23\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[22\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[21\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[20\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[19\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[18\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[17\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[16\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[15\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[14\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[13\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[12\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[11\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[10\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[9\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[8\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[7\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[6\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[5\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[4\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[3\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[2\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[1\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_in\[0\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[31\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[30\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[29\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[28\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[27\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[26\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[25\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[24\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[23\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[22\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[21\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[20\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[19\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[18\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[17\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[16\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[15\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[14\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[13\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[12\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[11\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[10\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[9\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[8\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[7\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[6\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[5\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[4\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[3\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[2\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[1\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+data_out\[0\] O *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reset I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+clk I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+
+*R_NET N0 0.000e+00
+*DRIVER B_0:Z
+*CELL GTECH_BUF
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:CONTROL1_0 0.000e+00
+*RC C158:CONTROL1_0 0.000e+00
+*RC C157:CONTROL1_0 0.000e+00
+*END
+
+*R_NET N1 0.000e+00
+*DRIVER B_1:Z
+*CELL GTECH_BUF
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:CONTROL2_0 0.000e+00
+*RC C157:CONTROL2_0 0.000e+00
+*END
+
+*R_NET enable 0.000e+00
+*DRIVER enable
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C157:DATA2_0 0.000e+00
+*END
+
+*R_NET data_in\[31\] 0.000e+00
+*DRIVER data_in\[31\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_31 0.000e+00
+*END
+
+*R_NET data_in\[30\] 0.000e+00
+*DRIVER data_in\[30\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_30 0.000e+00
+*END
+
+*R_NET data_in\[29\] 0.000e+00
+*DRIVER data_in\[29\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_29 0.000e+00
+*END
+
+*R_NET data_in\[28\] 0.000e+00
+*DRIVER data_in\[28\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_28 0.000e+00
+*END
+
+*R_NET data_in\[27\] 0.000e+00
+*DRIVER data_in\[27\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_27 0.000e+00
+*END
+
+*R_NET data_in\[26\] 0.000e+00
+*DRIVER data_in\[26\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_26 0.000e+00
+*END
+
+*R_NET data_in\[25\] 0.000e+00
+*DRIVER data_in\[25\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_25 0.000e+00
+*END
+
+*R_NET data_in\[24\] 0.000e+00
+*DRIVER data_in\[24\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_24 0.000e+00
+*END
+
+*R_NET data_in\[23\] 0.000e+00
+*DRIVER data_in\[23\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_23 0.000e+00
+*END
+
+*R_NET data_in\[22\] 0.000e+00
+*DRIVER data_in\[22\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_22 0.000e+00
+*END
+
+*R_NET data_in\[21\] 0.000e+00
+*DRIVER data_in\[21\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_21 0.000e+00
+*END
+
+*R_NET data_in\[20\] 0.000e+00
+*DRIVER data_in\[20\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_20 0.000e+00
+*END
+
+*R_NET data_in\[19\] 0.000e+00
+*DRIVER data_in\[19\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_19 0.000e+00
+*END
+
+*R_NET data_in\[18\] 0.000e+00
+*DRIVER data_in\[18\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_18 0.000e+00
+*END
+
+*R_NET data_in\[17\] 0.000e+00
+*DRIVER data_in\[17\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_17 0.000e+00
+*END
+
+*R_NET data_in\[16\] 0.000e+00
+*DRIVER data_in\[16\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_16 0.000e+00
+*END
+
+*R_NET data_in\[15\] 0.000e+00
+*DRIVER data_in\[15\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_15 0.000e+00
+*END
+
+*R_NET data_in\[14\] 0.000e+00
+*DRIVER data_in\[14\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_14 0.000e+00
+*END
+
+*R_NET data_in\[13\] 0.000e+00
+*DRIVER data_in\[13\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_13 0.000e+00
+*END
+
+*R_NET data_in\[12\] 0.000e+00
+*DRIVER data_in\[12\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_12 0.000e+00
+*END
+
+*R_NET data_in\[11\] 0.000e+00
+*DRIVER data_in\[11\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_11 0.000e+00
+*END
+
+*R_NET data_in\[10\] 0.000e+00
+*DRIVER data_in\[10\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_10 0.000e+00
+*END
+
+*R_NET data_in\[9\] 0.000e+00
+*DRIVER data_in\[9\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_9 0.000e+00
+*END
+
+*R_NET data_in\[8\] 0.000e+00
+*DRIVER data_in\[8\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_8 0.000e+00
+*END
+
+*R_NET data_in\[7\] 0.000e+00
+*DRIVER data_in\[7\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_7 0.000e+00
+*END
+
+*R_NET data_in\[6\] 0.000e+00
+*DRIVER data_in\[6\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_6 0.000e+00
+*END
+
+*R_NET data_in\[5\] 0.000e+00
+*DRIVER data_in\[5\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_5 0.000e+00
+*END
+
+*R_NET data_in\[4\] 0.000e+00
+*DRIVER data_in\[4\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_4 0.000e+00
+*END
+
+*R_NET data_in\[3\] 0.000e+00
+*DRIVER data_in\[3\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_3 0.000e+00
+*END
+
+*R_NET data_in\[2\] 0.000e+00
+*DRIVER data_in\[2\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_2 0.000e+00
+*END
+
+*R_NET data_in\[1\] 0.000e+00
+*DRIVER data_in\[1\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_1 0.000e+00
+*END
+
+*R_NET data_in\[0\] 0.000e+00
+*DRIVER data_in\[0\]
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C158:DATA2_0 0.000e+00
+*END
+
+*R_NET data_out\[31\] 0.000e+00
+*DRIVER data_out_reg\[31\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_31 0.000e+00
+*RC data_out\[31\] 0.000e+00
+*END
+
+*R_NET data_out\[30\] 0.000e+00
+*DRIVER data_out_reg\[30\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_30 0.000e+00
+*RC data_out\[30\] 0.000e+00
+*END
+
+*R_NET data_out\[29\] 0.000e+00
+*DRIVER data_out_reg\[29\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_29 0.000e+00
+*RC data_out\[29\] 0.000e+00
+*END
+
+*R_NET data_out\[28\] 0.000e+00
+*DRIVER data_out_reg\[28\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_28 0.000e+00
+*RC data_out\[28\] 0.000e+00
+*END
+
+*R_NET data_out\[27\] 0.000e+00
+*DRIVER data_out_reg\[27\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_27 0.000e+00
+*RC data_out\[27\] 0.000e+00
+*END
+
+*R_NET data_out\[26\] 0.000e+00
+*DRIVER data_out_reg\[26\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_26 0.000e+00
+*RC data_out\[26\] 0.000e+00
+*END
+
+*R_NET data_out\[25\] 0.000e+00
+*DRIVER data_out_reg\[25\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_25 0.000e+00
+*RC data_out\[25\] 0.000e+00
+*END
+
+*R_NET data_out\[24\] 0.000e+00
+*DRIVER data_out_reg\[24\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_24 0.000e+00
+*RC data_out\[24\] 0.000e+00
+*END
+
+*R_NET data_out\[23\] 0.000e+00
+*DRIVER data_out_reg\[23\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_23 0.000e+00
+*RC data_out\[23\] 0.000e+00
+*END
+
+*R_NET data_out\[22\] 0.000e+00
+*DRIVER data_out_reg\[22\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_22 0.000e+00
+*RC data_out\[22\] 0.000e+00
+*END
+
+*R_NET data_out\[21\] 0.000e+00
+*DRIVER data_out_reg\[21\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_21 0.000e+00
+*RC data_out\[21\] 0.000e+00
+*END
+
+*R_NET data_out\[20\] 0.000e+00
+*DRIVER data_out_reg\[20\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_20 0.000e+00
+*RC data_out\[20\] 0.000e+00
+*END
+
+*R_NET data_out\[19\] 0.000e+00
+*DRIVER data_out_reg\[19\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_19 0.000e+00
+*RC data_out\[19\] 0.000e+00
+*END
+
+*R_NET data_out\[18\] 0.000e+00
+*DRIVER data_out_reg\[18\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_18 0.000e+00
+*RC data_out\[18\] 0.000e+00
+*END
+
+*R_NET data_out\[17\] 0.000e+00
+*DRIVER data_out_reg\[17\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_17 0.000e+00
+*RC data_out\[17\] 0.000e+00
+*END
+
+*R_NET data_out\[16\] 0.000e+00
+*DRIVER data_out_reg\[16\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_16 0.000e+00
+*RC data_out\[16\] 0.000e+00
+*END
+
+*R_NET data_out\[15\] 0.000e+00
+*DRIVER data_out_reg\[15\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_15 0.000e+00
+*RC data_out\[15\] 0.000e+00
+*END
+
+*R_NET data_out\[14\] 0.000e+00
+*DRIVER data_out_reg\[14\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_14 0.000e+00
+*RC data_out\[14\] 0.000e+00
+*END
+
+*R_NET data_out\[13\] 0.000e+00
+*DRIVER data_out_reg\[13\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_13 0.000e+00
+*RC data_out\[13\] 0.000e+00
+*END
+
+*R_NET data_out\[12\] 0.000e+00
+*DRIVER data_out_reg\[12\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_12 0.000e+00
+*RC data_out\[12\] 0.000e+00
+*END
+
+*R_NET data_out\[11\] 0.000e+00
+*DRIVER data_out_reg\[11\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_11 0.000e+00
+*RC data_out\[11\] 0.000e+00
+*END
+
+*R_NET data_out\[10\] 0.000e+00
+*DRIVER data_out_reg\[10\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_10 0.000e+00
+*RC data_out\[10\] 0.000e+00
+*END
+
+*R_NET data_out\[9\] 0.000e+00
+*DRIVER data_out_reg\[9\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_9 0.000e+00
+*RC data_out\[9\] 0.000e+00
+*END
+
+*R_NET data_out\[8\] 0.000e+00
+*DRIVER data_out_reg\[8\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_8 0.000e+00
+*RC data_out\[8\] 0.000e+00
+*END
+
+*R_NET data_out\[7\] 0.000e+00
+*DRIVER data_out_reg\[7\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_7 0.000e+00
+*RC data_out\[7\] 0.000e+00
+*END
+
+*R_NET data_out\[6\] 0.000e+00
+*DRIVER data_out_reg\[6\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_6 0.000e+00
+*RC data_out\[6\] 0.000e+00
+*END
+
+*R_NET data_out\[5\] 0.000e+00
+*DRIVER data_out_reg\[5\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_5 0.000e+00
+*RC data_out\[5\] 0.000e+00
+*END
+
+*R_NET data_out\[4\] 0.000e+00
+*DRIVER data_out_reg\[4\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_4 0.000e+00
+*RC data_out\[4\] 0.000e+00
+*END
+
+*R_NET data_out\[3\] 0.000e+00
+*DRIVER data_out_reg\[3\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_3 0.000e+00
+*RC data_out\[3\] 0.000e+00
+*END
+
+*R_NET data_out\[2\] 0.000e+00
+*DRIVER data_out_reg\[2\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_2 0.000e+00
+*RC data_out\[2\] 0.000e+00
+*END
+
+*R_NET data_out\[1\] 0.000e+00
+*DRIVER data_out_reg\[1\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_1 0.000e+00
+*RC data_out\[1\] 0.000e+00
+*END
+
+*R_NET data_out\[0\] 0.000e+00
+*DRIVER data_out_reg\[0\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:A_0 0.000e+00
+*RC data_out\[0\] 0.000e+00
+*END
+
+*R_NET reset 0.000e+00
+*DRIVER reset
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC I_1:A 0.000e+00
+*RC C166:B 0.000e+00
+*RC B_0:A 0.000e+00
+*RC I_0:A 0.000e+00
+*END
+
+*R_NET clk 0.000e+00
+*DRIVER clk
+*CELL NULL
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[0\]:clocked_on 0.000e+00
+*RC data_out_reg\[1\]:clocked_on 0.000e+00
+*RC data_out_reg\[2\]:clocked_on 0.000e+00
+*RC data_out_reg\[3\]:clocked_on 0.000e+00
+*RC data_out_reg\[4\]:clocked_on 0.000e+00
+*RC data_out_reg\[5\]:clocked_on 0.000e+00
+*RC data_out_reg\[6\]:clocked_on 0.000e+00
+*RC data_out_reg\[7\]:clocked_on 0.000e+00
+*RC data_out_reg\[8\]:clocked_on 0.000e+00
+*RC data_out_reg\[9\]:clocked_on 0.000e+00
+*RC data_out_reg\[10\]:clocked_on 0.000e+00
+*RC data_out_reg\[11\]:clocked_on 0.000e+00
+*RC data_out_reg\[12\]:clocked_on 0.000e+00
+*RC data_out_reg\[13\]:clocked_on 0.000e+00
+*RC data_out_reg\[14\]:clocked_on 0.000e+00
+*RC data_out_reg\[15\]:clocked_on 0.000e+00
+*RC data_out_reg\[16\]:clocked_on 0.000e+00
+*RC data_out_reg\[17\]:clocked_on 0.000e+00
+*RC data_out_reg\[18\]:clocked_on 0.000e+00
+*RC data_out_reg\[19\]:clocked_on 0.000e+00
+*RC data_out_reg\[20\]:clocked_on 0.000e+00
+*RC data_out_reg\[21\]:clocked_on 0.000e+00
+*RC data_out_reg\[22\]:clocked_on 0.000e+00
+*RC data_out_reg\[23\]:clocked_on 0.000e+00
+*RC data_out_reg\[24\]:clocked_on 0.000e+00
+*RC data_out_reg\[25\]:clocked_on 0.000e+00
+*RC data_out_reg\[26\]:clocked_on 0.000e+00
+*RC data_out_reg\[27\]:clocked_on 0.000e+00
+*RC data_out_reg\[28\]:clocked_on 0.000e+00
+*RC data_out_reg\[29\]:clocked_on 0.000e+00
+*RC data_out_reg\[30\]:clocked_on 0.000e+00
+*RC data_out_reg\[31\]:clocked_on 0.000e+00
+*RC R_enable_reg:clocked_on 0.000e+00
+*RC R_data_reg\[0\]:clocked_on 0.000e+00
+*RC R_data_reg\[1\]:clocked_on 0.000e+00
+*RC R_data_reg\[2\]:clocked_on 0.000e+00
+*RC R_data_reg\[3\]:clocked_on 0.000e+00
+*RC R_data_reg\[4\]:clocked_on 0.000e+00
+*RC R_data_reg\[5\]:clocked_on 0.000e+00
+*RC R_data_reg\[6\]:clocked_on 0.000e+00
+*RC R_data_reg\[7\]:clocked_on 0.000e+00
+*RC R_data_reg\[8\]:clocked_on 0.000e+00
+*RC R_data_reg\[9\]:clocked_on 0.000e+00
+*RC R_data_reg\[10\]:clocked_on 0.000e+00
+*RC R_data_reg\[11\]:clocked_on 0.000e+00
+*RC R_data_reg\[12\]:clocked_on 0.000e+00
+*RC R_data_reg\[13\]:clocked_on 0.000e+00
+*RC R_data_reg\[14\]:clocked_on 0.000e+00
+*RC R_data_reg\[15\]:clocked_on 0.000e+00
+*RC R_data_reg\[16\]:clocked_on 0.000e+00
+*RC R_data_reg\[17\]:clocked_on 0.000e+00
+*RC R_data_reg\[18\]:clocked_on 0.000e+00
+*RC R_data_reg\[19\]:clocked_on 0.000e+00
+*RC R_data_reg\[20\]:clocked_on 0.000e+00
+*RC R_data_reg\[21\]:clocked_on 0.000e+00
+*RC R_data_reg\[22\]:clocked_on 0.000e+00
+*RC R_data_reg\[23\]:clocked_on 0.000e+00
+*RC R_data_reg\[24\]:clocked_on 0.000e+00
+*RC R_data_reg\[25\]:clocked_on 0.000e+00
+*RC R_data_reg\[26\]:clocked_on 0.000e+00
+*RC R_data_reg\[27\]:clocked_on 0.000e+00
+*RC R_data_reg\[28\]:clocked_on 0.000e+00
+*RC R_data_reg\[29\]:clocked_on 0.000e+00
+*RC R_data_reg\[30\]:clocked_on 0.000e+00
+*RC R_data_reg\[31\]:clocked_on 0.000e+00
+*END
+
+*R_NET R_enable 0.000e+00
+*DRIVER R_enable_reg:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C170:A 0.000e+00
+*RC C166:A 0.000e+00
+*END
+
+*R_NET N2 0.000e+00
+*DRIVER C157:Z_0
+*CELL \*SELECT_OP_2\.1_2\.1_1
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_enable_reg:next_state 0.000e+00
+*END
+
+*R_NET N3 0.000e+00
+*DRIVER I_0:Z
+*CELL GTECH_NOT
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC B_1:A 0.000e+00
+*END
+
+*R_NET R_data\[31\] 0.000e+00
+*DRIVER R_data_reg\[31\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_31 0.000e+00
+*END
+
+*R_NET R_data\[30\] 0.000e+00
+*DRIVER R_data_reg\[30\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_30 0.000e+00
+*END
+
+*R_NET R_data\[29\] 0.000e+00
+*DRIVER R_data_reg\[29\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_29 0.000e+00
+*END
+
+*R_NET R_data\[28\] 0.000e+00
+*DRIVER R_data_reg\[28\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_28 0.000e+00
+*END
+
+*R_NET R_data\[27\] 0.000e+00
+*DRIVER R_data_reg\[27\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_27 0.000e+00
+*END
+
+*R_NET R_data\[26\] 0.000e+00
+*DRIVER R_data_reg\[26\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_26 0.000e+00
+*END
+
+*R_NET R_data\[25\] 0.000e+00
+*DRIVER R_data_reg\[25\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_25 0.000e+00
+*END
+
+*R_NET R_data\[24\] 0.000e+00
+*DRIVER R_data_reg\[24\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_24 0.000e+00
+*END
+
+*R_NET R_data\[23\] 0.000e+00
+*DRIVER R_data_reg\[23\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_23 0.000e+00
+*END
+
+*R_NET R_data\[22\] 0.000e+00
+*DRIVER R_data_reg\[22\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_22 0.000e+00
+*END
+
+*R_NET R_data\[21\] 0.000e+00
+*DRIVER R_data_reg\[21\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_21 0.000e+00
+*END
+
+*R_NET R_data\[20\] 0.000e+00
+*DRIVER R_data_reg\[20\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_20 0.000e+00
+*END
+
+*R_NET R_data\[19\] 0.000e+00
+*DRIVER R_data_reg\[19\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_19 0.000e+00
+*END
+
+*R_NET R_data\[18\] 0.000e+00
+*DRIVER R_data_reg\[18\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_18 0.000e+00
+*END
+
+*R_NET R_data\[17\] 0.000e+00
+*DRIVER R_data_reg\[17\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_17 0.000e+00
+*END
+
+*R_NET R_data\[16\] 0.000e+00
+*DRIVER R_data_reg\[16\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_16 0.000e+00
+*END
+
+*R_NET R_data\[15\] 0.000e+00
+*DRIVER R_data_reg\[15\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_15 0.000e+00
+*END
+
+*R_NET R_data\[14\] 0.000e+00
+*DRIVER R_data_reg\[14\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_14 0.000e+00
+*END
+
+*R_NET R_data\[13\] 0.000e+00
+*DRIVER R_data_reg\[13\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_13 0.000e+00
+*END
+
+*R_NET R_data\[12\] 0.000e+00
+*DRIVER R_data_reg\[12\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_12 0.000e+00
+*END
+
+*R_NET R_data\[11\] 0.000e+00
+*DRIVER R_data_reg\[11\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_11 0.000e+00
+*END
+
+*R_NET R_data\[10\] 0.000e+00
+*DRIVER R_data_reg\[10\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_10 0.000e+00
+*END
+
+*R_NET R_data\[9\] 0.000e+00
+*DRIVER R_data_reg\[9\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_9 0.000e+00
+*END
+
+*R_NET R_data\[8\] 0.000e+00
+*DRIVER R_data_reg\[8\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_8 0.000e+00
+*END
+
+*R_NET R_data\[7\] 0.000e+00
+*DRIVER R_data_reg\[7\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_7 0.000e+00
+*END
+
+*R_NET R_data\[6\] 0.000e+00
+*DRIVER R_data_reg\[6\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_6 0.000e+00
+*END
+
+*R_NET R_data\[5\] 0.000e+00
+*DRIVER R_data_reg\[5\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_5 0.000e+00
+*END
+
+*R_NET R_data\[4\] 0.000e+00
+*DRIVER R_data_reg\[4\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_4 0.000e+00
+*END
+
+*R_NET R_data\[3\] 0.000e+00
+*DRIVER R_data_reg\[3\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_3 0.000e+00
+*END
+
+*R_NET R_data\[2\] 0.000e+00
+*DRIVER R_data_reg\[2\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_2 0.000e+00
+*END
+
+*R_NET R_data\[1\] 0.000e+00
+*DRIVER R_data_reg\[1\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_1 0.000e+00
+*END
+
+*R_NET R_data\[0\] 0.000e+00
+*DRIVER R_data_reg\[0\]:Q
+*CELL \*\*SEQGEN\*\*
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC add_22:B_0 0.000e+00
+*END
+
+*R_NET N4 0.000e+00
+*DRIVER C158:Z_0
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[0\]:next_state 0.000e+00
+*END
+
+*R_NET N5 0.000e+00
+*DRIVER C158:Z_1
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[1\]:next_state 0.000e+00
+*END
+
+*R_NET N6 0.000e+00
+*DRIVER C158:Z_2
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[2\]:next_state 0.000e+00
+*END
+
+*R_NET N7 0.000e+00
+*DRIVER C158:Z_3
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[3\]:next_state 0.000e+00
+*END
+
+*R_NET N8 0.000e+00
+*DRIVER C158:Z_4
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[4\]:next_state 0.000e+00
+*END
+
+*R_NET N9 0.000e+00
+*DRIVER C158:Z_5
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[5\]:next_state 0.000e+00
+*END
+
+*R_NET N10 0.000e+00
+*DRIVER C158:Z_6
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[6\]:next_state 0.000e+00
+*END
+
+*R_NET N11 0.000e+00
+*DRIVER C158:Z_7
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[7\]:next_state 0.000e+00
+*END
+
+*R_NET N12 0.000e+00
+*DRIVER C158:Z_8
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[8\]:next_state 0.000e+00
+*END
+
+*R_NET N13 0.000e+00
+*DRIVER C158:Z_9
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[9\]:next_state 0.000e+00
+*END
+
+*R_NET N14 0.000e+00
+*DRIVER C158:Z_10
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[10\]:next_state 0.000e+00
+*END
+
+*R_NET N15 0.000e+00
+*DRIVER C158:Z_11
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[11\]:next_state 0.000e+00
+*END
+
+*R_NET N16 0.000e+00
+*DRIVER C158:Z_12
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[12\]:next_state 0.000e+00
+*END
+
+*R_NET N17 0.000e+00
+*DRIVER C158:Z_13
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[13\]:next_state 0.000e+00
+*END
+
+*R_NET N18 0.000e+00
+*DRIVER C158:Z_14
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[14\]:next_state 0.000e+00
+*END
+
+*R_NET N19 0.000e+00
+*DRIVER C158:Z_15
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[15\]:next_state 0.000e+00
+*END
+
+*R_NET N20 0.000e+00
+*DRIVER C158:Z_16
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[16\]:next_state 0.000e+00
+*END
+
+*R_NET N21 0.000e+00
+*DRIVER C158:Z_17
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[17\]:next_state 0.000e+00
+*END
+
+*R_NET N22 0.000e+00
+*DRIVER C158:Z_18
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[18\]:next_state 0.000e+00
+*END
+
+*R_NET N23 0.000e+00
+*DRIVER C158:Z_19
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[19\]:next_state 0.000e+00
+*END
+
+*R_NET N24 0.000e+00
+*DRIVER C158:Z_20
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[20\]:next_state 0.000e+00
+*END
+
+*R_NET N25 0.000e+00
+*DRIVER C158:Z_21
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[21\]:next_state 0.000e+00
+*END
+
+*R_NET N26 0.000e+00
+*DRIVER C158:Z_22
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[22\]:next_state 0.000e+00
+*END
+
+*R_NET N27 0.000e+00
+*DRIVER C158:Z_23
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[23\]:next_state 0.000e+00
+*END
+
+*R_NET N28 0.000e+00
+*DRIVER C158:Z_24
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[24\]:next_state 0.000e+00
+*END
+
+*R_NET N29 0.000e+00
+*DRIVER C158:Z_25
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[25\]:next_state 0.000e+00
+*END
+
+*R_NET N30 0.000e+00
+*DRIVER C158:Z_26
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[26\]:next_state 0.000e+00
+*END
+
+*R_NET N31 0.000e+00
+*DRIVER C158:Z_27
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[27\]:next_state 0.000e+00
+*END
+
+*R_NET N32 0.000e+00
+*DRIVER C158:Z_28
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[28\]:next_state 0.000e+00
+*END
+
+*R_NET N33 0.000e+00
+*DRIVER C158:Z_29
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[29\]:next_state 0.000e+00
+*END
+
+*R_NET N34 0.000e+00
+*DRIVER C158:Z_30
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[30\]:next_state 0.000e+00
+*END
+
+*R_NET N35 0.000e+00
+*DRIVER C158:Z_31
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC R_data_reg\[31\]:next_state 0.000e+00
+*END
+
+*R_NET N36 0.000e+00
+*DRIVER C166:Z
+*CELL GTECH_OR2
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[0\]:synch_enable 0.000e+00
+*RC data_out_reg\[1\]:synch_enable 0.000e+00
+*RC data_out_reg\[2\]:synch_enable 0.000e+00
+*RC data_out_reg\[3\]:synch_enable 0.000e+00
+*RC data_out_reg\[4\]:synch_enable 0.000e+00
+*RC data_out_reg\[5\]:synch_enable 0.000e+00
+*RC data_out_reg\[6\]:synch_enable 0.000e+00
+*RC data_out_reg\[7\]:synch_enable 0.000e+00
+*RC data_out_reg\[8\]:synch_enable 0.000e+00
+*RC data_out_reg\[9\]:synch_enable 0.000e+00
+*RC data_out_reg\[10\]:synch_enable 0.000e+00
+*RC data_out_reg\[11\]:synch_enable 0.000e+00
+*RC data_out_reg\[12\]:synch_enable 0.000e+00
+*RC data_out_reg\[13\]:synch_enable 0.000e+00
+*RC data_out_reg\[14\]:synch_enable 0.000e+00
+*RC data_out_reg\[15\]:synch_enable 0.000e+00
+*RC data_out_reg\[16\]:synch_enable 0.000e+00
+*RC data_out_reg\[17\]:synch_enable 0.000e+00
+*RC data_out_reg\[18\]:synch_enable 0.000e+00
+*RC data_out_reg\[19\]:synch_enable 0.000e+00
+*RC data_out_reg\[20\]:synch_enable 0.000e+00
+*RC data_out_reg\[21\]:synch_enable 0.000e+00
+*RC data_out_reg\[22\]:synch_enable 0.000e+00
+*RC data_out_reg\[23\]:synch_enable 0.000e+00
+*RC data_out_reg\[24\]:synch_enable 0.000e+00
+*RC data_out_reg\[25\]:synch_enable 0.000e+00
+*RC data_out_reg\[26\]:synch_enable 0.000e+00
+*RC data_out_reg\[27\]:synch_enable 0.000e+00
+*RC data_out_reg\[28\]:synch_enable 0.000e+00
+*RC data_out_reg\[29\]:synch_enable 0.000e+00
+*RC data_out_reg\[30\]:synch_enable 0.000e+00
+*RC data_out_reg\[31\]:synch_enable 0.000e+00
+*END
+
+*R_NET N37 0.000e+00
+*DRIVER B_2:Z
+*CELL GTECH_BUF
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C171:A 0.000e+00
+*END
+
+*R_NET N38 0.000e+00
+*DRIVER add_22:Z_0
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_0 0.000e+00
+*END
+
+*R_NET N39 0.000e+00
+*DRIVER add_22:Z_1
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_1 0.000e+00
+*END
+
+*R_NET N40 0.000e+00
+*DRIVER add_22:Z_2
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_2 0.000e+00
+*END
+
+*R_NET N41 0.000e+00
+*DRIVER add_22:Z_3
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_3 0.000e+00
+*END
+
+*R_NET N42 0.000e+00
+*DRIVER add_22:Z_4
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_4 0.000e+00
+*END
+
+*R_NET N43 0.000e+00
+*DRIVER add_22:Z_5
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_5 0.000e+00
+*END
+
+*R_NET N44 0.000e+00
+*DRIVER add_22:Z_6
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_6 0.000e+00
+*END
+
+*R_NET N45 0.000e+00
+*DRIVER add_22:Z_7
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_7 0.000e+00
+*END
+
+*R_NET N46 0.000e+00
+*DRIVER add_22:Z_8
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_8 0.000e+00
+*END
+
+*R_NET N47 0.000e+00
+*DRIVER add_22:Z_9
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_9 0.000e+00
+*END
+
+*R_NET N48 0.000e+00
+*DRIVER add_22:Z_10
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_10 0.000e+00
+*END
+
+*R_NET N49 0.000e+00
+*DRIVER add_22:Z_11
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_11 0.000e+00
+*END
+
+*R_NET N50 0.000e+00
+*DRIVER add_22:Z_12
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_12 0.000e+00
+*END
+
+*R_NET N51 0.000e+00
+*DRIVER add_22:Z_13
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_13 0.000e+00
+*END
+
+*R_NET N52 0.000e+00
+*DRIVER add_22:Z_14
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_14 0.000e+00
+*END
+
+*R_NET N53 0.000e+00
+*DRIVER add_22:Z_15
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_15 0.000e+00
+*END
+
+*R_NET N54 0.000e+00
+*DRIVER add_22:Z_16
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_16 0.000e+00
+*END
+
+*R_NET N55 0.000e+00
+*DRIVER add_22:Z_17
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_17 0.000e+00
+*END
+
+*R_NET N56 0.000e+00
+*DRIVER add_22:Z_18
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_18 0.000e+00
+*END
+
+*R_NET N57 0.000e+00
+*DRIVER add_22:Z_19
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_19 0.000e+00
+*END
+
+*R_NET N58 0.000e+00
+*DRIVER add_22:Z_20
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_20 0.000e+00
+*END
+
+*R_NET N59 0.000e+00
+*DRIVER add_22:Z_21
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_21 0.000e+00
+*END
+
+*R_NET N60 0.000e+00
+*DRIVER add_22:Z_22
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_22 0.000e+00
+*END
+
+*R_NET N61 0.000e+00
+*DRIVER add_22:Z_23
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_23 0.000e+00
+*END
+
+*R_NET N62 0.000e+00
+*DRIVER add_22:Z_24
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_24 0.000e+00
+*END
+
+*R_NET N63 0.000e+00
+*DRIVER add_22:Z_25
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_25 0.000e+00
+*END
+
+*R_NET N64 0.000e+00
+*DRIVER add_22:Z_26
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_26 0.000e+00
+*END
+
+*R_NET N65 0.000e+00
+*DRIVER add_22:Z_27
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_27 0.000e+00
+*END
+
+*R_NET N66 0.000e+00
+*DRIVER add_22:Z_28
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_28 0.000e+00
+*END
+
+*R_NET N67 0.000e+00
+*DRIVER add_22:Z_29
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_29 0.000e+00
+*END
+
+*R_NET N68 0.000e+00
+*DRIVER add_22:Z_30
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_30 0.000e+00
+*END
+
+*R_NET N69 0.000e+00
+*DRIVER add_22:Z_31
+*CELL \*ADD_UNS_OP_32_32_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C159:DATA2_31 0.000e+00
+*END
+
+*R_NET N70 0.000e+00
+*DRIVER C159:Z_0
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[0\]:next_state 0.000e+00
+*END
+
+*R_NET N71 0.000e+00
+*DRIVER C159:Z_1
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[1\]:next_state 0.000e+00
+*END
+
+*R_NET N72 0.000e+00
+*DRIVER C159:Z_2
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[2\]:next_state 0.000e+00
+*END
+
+*R_NET N73 0.000e+00
+*DRIVER C159:Z_3
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[3\]:next_state 0.000e+00
+*END
+
+*R_NET N74 0.000e+00
+*DRIVER C159:Z_4
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[4\]:next_state 0.000e+00
+*END
+
+*R_NET N75 0.000e+00
+*DRIVER C159:Z_5
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[5\]:next_state 0.000e+00
+*END
+
+*R_NET N76 0.000e+00
+*DRIVER C159:Z_6
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[6\]:next_state 0.000e+00
+*END
+
+*R_NET N77 0.000e+00
+*DRIVER C159:Z_7
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[7\]:next_state 0.000e+00
+*END
+
+*R_NET N78 0.000e+00
+*DRIVER C159:Z_8
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[8\]:next_state 0.000e+00
+*END
+
+*R_NET N79 0.000e+00
+*DRIVER C159:Z_9
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[9\]:next_state 0.000e+00
+*END
+
+*R_NET N80 0.000e+00
+*DRIVER C159:Z_10
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[10\]:next_state 0.000e+00
+*END
+
+*R_NET N81 0.000e+00
+*DRIVER C159:Z_11
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[11\]:next_state 0.000e+00
+*END
+
+*R_NET N82 0.000e+00
+*DRIVER C159:Z_12
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[12\]:next_state 0.000e+00
+*END
+
+*R_NET N83 0.000e+00
+*DRIVER C159:Z_13
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[13\]:next_state 0.000e+00
+*END
+
+*R_NET N84 0.000e+00
+*DRIVER C159:Z_14
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[14\]:next_state 0.000e+00
+*END
+
+*R_NET N85 0.000e+00
+*DRIVER C159:Z_15
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[15\]:next_state 0.000e+00
+*END
+
+*R_NET N86 0.000e+00
+*DRIVER C159:Z_16
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[16\]:next_state 0.000e+00
+*END
+
+*R_NET N87 0.000e+00
+*DRIVER C159:Z_17
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[17\]:next_state 0.000e+00
+*END
+
+*R_NET N88 0.000e+00
+*DRIVER C159:Z_18
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[18\]:next_state 0.000e+00
+*END
+
+*R_NET N89 0.000e+00
+*DRIVER C159:Z_19
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[19\]:next_state 0.000e+00
+*END
+
+*R_NET N90 0.000e+00
+*DRIVER C159:Z_20
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[20\]:next_state 0.000e+00
+*END
+
+*R_NET N91 0.000e+00
+*DRIVER C159:Z_21
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[21\]:next_state 0.000e+00
+*END
+
+*R_NET N92 0.000e+00
+*DRIVER C159:Z_22
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[22\]:next_state 0.000e+00
+*END
+
+*R_NET N93 0.000e+00
+*DRIVER C159:Z_23
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[23\]:next_state 0.000e+00
+*END
+
+*R_NET N94 0.000e+00
+*DRIVER C159:Z_24
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[24\]:next_state 0.000e+00
+*END
+
+*R_NET N95 0.000e+00
+*DRIVER C159:Z_25
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[25\]:next_state 0.000e+00
+*END
+
+*R_NET N96 0.000e+00
+*DRIVER C159:Z_26
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[26\]:next_state 0.000e+00
+*END
+
+*R_NET N97 0.000e+00
+*DRIVER C159:Z_27
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[27\]:next_state 0.000e+00
+*END
+
+*R_NET N98 0.000e+00
+*DRIVER C159:Z_28
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[28\]:next_state 0.000e+00
+*END
+
+*R_NET N99 0.000e+00
+*DRIVER C159:Z_29
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[29\]:next_state 0.000e+00
+*END
+
+*R_NET N100 0.000e+00
+*DRIVER C159:Z_30
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[30\]:next_state 0.000e+00
+*END
+
+*R_NET N101 0.000e+00
+*DRIVER C159:Z_31
+*CELL \*SELECT_OP_2\.32_2\.1_32
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC data_out_reg\[31\]:next_state 0.000e+00
+*END
+
+*R_NET N102 0.000e+00
+*DRIVER I_1:Z
+*CELL GTECH_NOT
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC C171:B 0.000e+00
+*RC C170:B 0.000e+00
+*END
+
+*R_NET N103 0.000e+00
+*DRIVER C170:Z
+*CELL GTECH_AND2
+*C2_R1_C1 0.000e+00 0.000e+00 0.000e+00 
+*LOADS
+*RC B_2:A 0.000e+00
+*RC C159:CONTROL2_0 0.000e+00
+*END
