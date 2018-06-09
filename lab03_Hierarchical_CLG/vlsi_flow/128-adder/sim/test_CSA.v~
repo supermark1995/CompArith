@@ -1,0 +1,73 @@
+module test_CSA;
+
+reg			clk;
+
+initial clk=0;
+always #5 clk=~clk;
+
+reg		enable;
+reg		[63:0]		A;
+reg		[63:0]		B;
+wire		[63:0]		sum;
+wire				carry;
+
+
+adder_64bit_CSA CSA_adder (
+	.A(A),
+	.B(B),
+	.Sum (sum),
+	.Cout(carry),
+	.enable (enable),
+	.clk (clk)
+);
+
+reg		[31:0]		sim_cycle;
+
+initial begin
+	$vcdplusfile("sim.vpd");
+	$vcdpluson;
+
+	@(posedge clk);
+	sim_cycle = 0;
+
+	while (sim_cycle<20) begin
+		@(posedge clk);
+		#1;
+		case (sim_cycle)
+			0: begin
+				enable = 1'b1;
+				A = 64'hAAAABBBBCCCCDDDD;
+				B = 64'h1234234534564567;
+			end
+
+			1: begin
+				enable = 1'b1;
+				A = 64'hFADEBEAD79632108;
+				B = 64'hEEE312ABFFDEC967;
+			end
+			2: begin
+				enable = 1'b1;
+				A = 64'h1122334455667788;
+				B = 64'h99AABBCCDDEEFF00;				
+			end
+			default: begin
+				enable = 1'b0;
+				A = 64'h0;
+				B = 64'h0;			
+			end
+		endcase
+
+		#7;
+		$display ("%d: sum ='h%h", sim_cycle, sum);
+
+		sim_cycle = sim_cycle+1;
+	end
+
+	$finish(1);
+end
+
+endmodule
+
+
+
+

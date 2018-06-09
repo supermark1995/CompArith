@@ -1,0 +1,53 @@
+module CLA_16bit (X,Y,Cin,Cout,S,G,P);
+
+input	[15:0]		X;
+input	[15:0]		Y;
+input			Cin;
+output	[15:0]		S;
+output			Cout;
+output			G;
+output			P;
+
+wire	[3:0]		Gen;
+wire	[3:0]		Prop;
+wire 	[4:1]		C;
+
+
+CLA_4bit CLA_4x0(
+			.X(X[3:0]),
+			.Y(Y[3:0]),
+			.Cin(Cin),
+			.S(S[3:0]),
+			.Cout(),			
+			.P(Prop[0]),
+			.G(Gen[0])
+);
+
+genvar i;
+generate
+	for(i = 1; i < 4; i = i + 1) begin: CLA_16bit
+		CLA_4bit CLA_4x (
+			.X(X[4*i +: 4]),
+			.Y(Y[4*i +: 4]),
+			.Cin(C[i]),
+			.S(S[4*i +: 4]),
+			.Cout(),			
+			.P(Prop[i]),
+			.G(Gen[i])
+		);
+	end
+endgenerate
+
+CLG_4bit CLG (
+	.P(Prop),
+	.G(Gen),
+	.Cin(Cin),
+	.Cout(C),
+	.P_out(P),
+	.G_out(G)
+);
+
+assign Cout = C[4];
+
+endmodule
+
