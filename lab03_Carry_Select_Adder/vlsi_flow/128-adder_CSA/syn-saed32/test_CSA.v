@@ -3,9 +3,20 @@
 
 module test_CSA;
 
+reg			clk;
+
+initial clk=0;
+always #5 clk=~clk;
+
+reg		enable;
+reg		[127:0]		A;
+reg		[127:0]		B;
+wire		[127:0]		sum;
+wire				carry;
 
 
-adder_8bit_CSA CSA_adder (
+
+adder_128bit_CSA CSA_adder (
 	.A(A),
 	.B(B),
 	.Sum (sum),
@@ -13,19 +24,6 @@ adder_8bit_CSA CSA_adder (
 	.enable (enable),
 	.clk (clk)
 );
-
-
-
-reg			clk;
-
-initial clk=0;
-always #5 clk=~clk;
-
-reg		enable;
-reg		[7:0]		A;
-reg		[7:0]		B;
-wire		[7:0]		sum;
-wire				carry;
 
 
 
@@ -45,25 +43,19 @@ initial begin
 		case (sim_cycle)
 			0: begin
 				enable = 1'b1;
-				A = 8'b0010;
-				B = 8'b1011;
-				//A = 128'hF123456789ABCDEFF123456789ABCDEF;
-				//B = 128'h23456789ABCDEF1223456789ABCDEF12;
+				A = 128'hF123456789ABCDEFF123456789ABCDEF;
+				B = 128'h23456789ABCDEF1223456789ABCDEF12;
 			end
 
 			1: begin
 				enable = 1'b1;
-				A = 8'b1010;
-				B = 8'b0111;
-				//A = 128'h0123456789ABCDEF0123456789ABCDEF;
-				//B = 128'hFEDCBA9876543210FEDCBA9876543210;
+				A = 128'h0123456789ABCDEF0123456789ABCDEF;
+				B = 128'hFEDCBA9876543210FEDCBA9876543210;
 			end
 			default: begin
 				enable = 1'b0;
-				A = 8'b0;
-				B = 8'b0;
-				//A = 128'h0000;
-				//B = 128'h0000;			
+				A = 128'b0;
+				B = 128'b0;		
 			end
 		endcase
 

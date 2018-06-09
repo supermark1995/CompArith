@@ -1,6 +1,6 @@
 ################################################################################
 #
-# PrimeTime script: [vlsi_flow/acc/syn-saed32/analysis.tcl]
+# script to analyze timing and power using PrimeTimePX
 #
 ################################################################################
 
@@ -14,19 +14,19 @@ set power_analysis_mode averaged
 ################################################################################
 
 #directories for EDA-tools and cell library
-source ./eda_env.tcl
+source eda_env.tcl
+set cell_lib_path "$CELL_LIB_DB_DIR/sc9_base_lvt"
 
 #directory of RTL source code
-set design_root ".."
-set design_src_dir "$design_root/rtl"
+set work_dir ".."
+set rtl_dir "$work_dir/rtl"
 
 #the search path for everything
-set search_path " . $design_src_dir"
+set search_path " ., $cell_lib_path, $rtl_dir"
 
 #set the library
-set target_library "./saed32lvt_ff0p85v25c.db ./saed32lvt_pg_ff0p85v25c.db"
-
-set link_library "* $target_library"
+set target_library sc9_cln40g_base_lvt_tt_typical_max_0p90v_25c.db
+set link_library "* $cell_lib_path/$target_library"
 
 
 ################################################################################
@@ -36,16 +36,14 @@ set link_library "* $target_library"
 ################################################################################
 
 #read the netlist
-set DESIGN_NAME adder_128bit
-
-read_verilog $DESIGN_NAME.netlist.v
-current_design adder_128bit
+read_verilog acc.netlist.v
+current_design acc
 link
 
 #read support data to the design
-read_sdc $DESIGN_NAME.sdc
-read_parasitics $DESIGN_NAME.spf
-read_vcd sim.vpd -strip_path test_CLA/CLA_adder
+read_sdc acc.sdc
+read_parasitics acc.spf
+read_vcd sim.vpd -strip_path tb/u_target
 
 ################################################################################
 #
@@ -53,10 +51,7 @@ read_vcd sim.vpd -strip_path test_CLA/CLA_adder
 #
 ################################################################################
 
-set OUTPUT $DESIGN_NAME
-
-check_timing
-report_timing > $OUTPUT.ptime.rpt
+report_timing > acc.ptime.rpt
 
 ################################################################################
 #
@@ -64,8 +59,8 @@ report_timing > $OUTPUT.ptime.rpt
 #
 ################################################################################
 
-check_power
-report_power > $OUTPUT.power.rpt
+report_power > acc.power.rpt
 
 exit
+
 

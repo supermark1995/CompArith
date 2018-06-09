@@ -51,7 +51,7 @@ clean_db:
 #
 ################################################################################
 
-DESIGN_NAME = adder_128bit
+DESIGN_NAME = adder_128bit_CSA
 
 SYNTH_TARGETS += $(DESIGN_NAME).netlist.v
 SYNTH_TARGETS += $(DESIGN_NAME).ddc
@@ -98,7 +98,7 @@ VERILOG_FLAGS += $(DEBUG_FLAGS)
 vpath %.v $(RTL_DIR)
 
 
-sim.exe: test_CLA.v $(DESIGN_NAME).netlist.v 
+sim.exe: test_CSA.v $(DESIGN_NAME).netlist.v 
 	$(VERILOG) $(VERILOG_FLAGS) $^ -o $@ 
 
 sim.out sim.vpd: sim.exe

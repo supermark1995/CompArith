@@ -42,28 +42,19 @@ set link_library "* $target_library"
 #
 ################################################################################
 
-read_file -format verilog adder_128bit.v
-read_file -format verilog CLA_64bit.v
-read_file -format verilog CLA_16bit.v
-read_file -format verilog CLA_8bit.v
-read_file -format verilog CLA_4bit.v
-read_file -format verilog CLG_4bit.v
+read_file -format verilog adder_128bit_CSA.v
+read_file -format verilog CSA_128bit.v
+read_file -format verilog CSA_64bit.v
+read_file -format verilog CSA_32bit.v
+read_file -format verilog CSA_16bit.v
+read_file -format verilog CSA_8bit.v
+read_file -format verilog CSA_4bit.v
+read_file -format verilog CSA_2bit.v
 read_file -format verilog Full_Adder.v
 
+current_design adder_128bit_CSA
 
-#read_file -format verilog adder_128bit_CSA.v
-#read_file -format verilog CSA_128bit.v
-#read_file -format verilog CSA_64bit.v
-#read_file -format verilog CSA_32bit.v
-#read_file -format verilog CSA_16bit.v
-#read_file -format verilog CSA_8bit.v
-#read_file -format verilog CSA_4bit.v
-#read_file -format verilog CSA_2bit.v
-#read_file -format verilog Full_Adder.v
-
-current_design adder_128bit
-
-set design_name "adder_128bit"
+set design_name "adder_128bit_CSA"
 
 
 ################################################################################

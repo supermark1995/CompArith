@@ -1,12 +1,12 @@
 `timescale 1ns/1ps
 
 
-module test;
+module test_CSA;
 
 reg			clk;
 
 initial clk=0;
-always #7 clk=~clk;
+always #5 clk=~clk;
 
 reg		enable;
 reg		[127:0]		A;
@@ -15,7 +15,8 @@ wire		[127:0]		sum;
 wire				carry;
 
 
-adder_128bit CLA_adder (
+
+adder_128bit_CSA CSA_adder (
 	.A(A),
 	.B(B),
 	.Sum (sum),
@@ -23,6 +24,9 @@ adder_128bit CLA_adder (
 	.enable (enable),
 	.clk (clk)
 );
+
+
+
 
 reg		[31:0]		sim_cycle;
 
@@ -50,12 +54,12 @@ initial begin
 			end
 			default: begin
 				enable = 1'b0;
-				A = 128'h0000;
-				B = 128'h0000;			
+				A = 128'b0;
+				B = 128'b0;		
 			end
 		endcase
 
-		#11;
+		#7;
 		$display ("%d: sum ='h%h", sim_cycle, sum);
 
 		sim_cycle = sim_cycle+1;
@@ -65,7 +69,3 @@ initial begin
 end
 
 endmodule
-
-
-
-

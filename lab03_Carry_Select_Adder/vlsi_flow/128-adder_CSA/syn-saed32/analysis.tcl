@@ -36,16 +36,16 @@ set link_library "* $target_library"
 ################################################################################
 
 #read the netlist
-set DESIGN_NAME adder_128bit
+set DESIGN_NAME adder_128bit_CSA
 
 read_verilog $DESIGN_NAME.netlist.v
-current_design adder_128bit
+current_design adder_128bit_CSA
 link
 
 #read support data to the design
 read_sdc $DESIGN_NAME.sdc
 read_parasitics $DESIGN_NAME.spf
-read_vcd sim.vpd -strip_path test_CLA/CLA_adder
+read_vcd sim.vpd -strip_path test_CSA/CSA_adder
 
 ################################################################################
 #

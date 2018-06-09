@@ -1,9 +1,9 @@
-module test;
+module test_CLA;
 
 reg			clk;
 
 initial clk=0;
-always #5 clk=~clk;
+always #7 clk=~clk;
 
 reg		enable;
 reg		[127:0]		A;
@@ -52,7 +52,7 @@ initial begin
 			end
 		endcase
 
-		#7;
+		#11;
 		$display ("%d: sum ='h%h", sim_cycle, sum);
 
 		sim_cycle = sim_cycle+1;

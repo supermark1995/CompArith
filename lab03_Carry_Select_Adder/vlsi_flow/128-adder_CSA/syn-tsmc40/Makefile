@@ -4,7 +4,6 @@
 #
 ################################################################################
 
-
 default: analysis
 
 
@@ -16,32 +15,11 @@ default: analysis
 ################################################################################
 
 CELL_LIB_ROOT ?= /usr/local/cell_lib
-SAED_LIB_DIR = $(CELL_LIB_ROOT)/SAED32_EDK
-SAED_SIM_DIR = $(SAED_LIB_DIR)/lib/stdcell_lvt/verilog
-CELL_LIB_SIM_DIR = $(SAED_SIM_DIR)
-CELL_LIB_SIM_SRC_FILES += $(CELL_LIB_SIM_DIR)/saed32nm_lvt.v
-
-
-
-################################################################################
-#
-# to build the cell library
-#
-################################################################################
-
-CELL_LIBS += saed32lvt_ff0p85v25c
-CELL_LIBS += saed32lvt_pg_ff0p85v25c
-
-DB_FILES += $(addsuffix .db, $(CELL_LIBS))
-
-$(DB_FILES): eda_env.tcl build_lib.tcl
-	dc_shell -f build_lib.tcl
-
-build_db: $(DB_FILES)
-
-clean_db:
-	rm -f *.db
-	rm -f *.log
+TSMC40_LIB_DIR = $(CELL_LIB_ROOT)/CBDK_TSMC40_Arm_v0.5
+TSMC40_SIM_DIR = $(TSMC40_LIB_DIR)/CIC/Verilog
+CELL_LIB_SIM_DIR = $(TSMC40_SIM_DIR)
+CELL_LIB_SIM_SRC_FILES += $(CELL_LIB_SIM_DIR)/sc9_cln40g_base_lvt.v
+CELL_LIB_SIM_SRC_FILES += $(CELL_LIB_SIM_DIR)/sc9_cln40g_base_lvt_udp.v
 
 
 
@@ -51,7 +29,7 @@ clean_db:
 #
 ################################################################################
 
-DESIGN_NAME = adder_128bit
+DESIGN_NAME = acc
 
 SYNTH_TARGETS += $(DESIGN_NAME).netlist.v
 SYNTH_TARGETS += $(DESIGN_NAME).ddc
@@ -79,10 +57,6 @@ clean_synth:
 #
 ################################################################################
 
-DESIGN_ROOT = $(abspath $(PWD)/..)
-RTL_DIR = $(DESIGN_ROOT)/rtl
-SUB_FILES = adder_128bit_CSA.v CSA_128bit.v CSA_64bit.v CSA_32bit.v CSA_16bit.v CSA_8bit.v CSA_4bit.v CSA_2bit.v Full_Adder.v
-
 VERILOG = vcs
 
 DESIGN_INC_DIR +=
@@ -93,12 +67,10 @@ DEBUG_FLAGS = -I
 
 VERILOG_FLAGS += -full64 +v2k $(INC_FLAGS) 
 VERILOG_FLAGS += -v $(CELL_LIB_SIM_SRC_FILES)
+VERILOG_FLAGS += +neg_tchk
 VERILOG_FLAGS += $(DEBUG_FLAGS)
 
-vpath %.v $(RTL_DIR)
-
-
-sim.exe: test_CLA.v $(DESIGN_NAME).netlist.v 
+sim.exe: tb.v $(DESIGN_NAME).netlist.v
 	$(VERILOG) $(VERILOG_FLAGS) $^ -o $@ 
 
 sim.out sim.vpd: sim.exe
@@ -115,8 +87,8 @@ sim.out sim.vpd: sim.exe
 ANALYSIS_OUT_FILES += $(DESIGN_NAME).ptime.rpt
 ANALYSIS_OUT_FILES += $(DESIGN_NAME).power.rpt
 
-$(ANALYSIS_OUT_FILES): analysis.tcl sim.vpd
-	pt_shell -f analysis.tcl
+$(ANALYSIS_OUT_FILES): analysis.pt.tcl sim.vpd
+	pt_shell -f analysis.pt.tcl
 
 analysis: $(ANALYSIS_OUT_FILES)
 
@@ -131,7 +103,7 @@ clean_analysis:
 #
 ################################################################################
 
-clean: clean_db clean_synth clean_analysis
+clean: clean_synth clean_analysis
 	rm -f *.exe
 	rm -f *.out
 	rm -f *.vpd
@@ -140,4 +112,5 @@ clean: clean_db clean_synth clean_analysis
 	rm -rf DVEfiles
 	rm -f ucli.key
 	rm -f default.svf
+	rm -f *.log
 
