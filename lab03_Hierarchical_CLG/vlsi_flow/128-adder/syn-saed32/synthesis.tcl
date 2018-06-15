@@ -98,7 +98,7 @@ set_fix_hold [get_clocks clk]
 #compile -map_effort high
 #compile -incremental_mapping -no_design_rule 
 #compile -boundary_optimization -incremental_mapping
-compile -no_design_rule -boundary_optimization
+compile -only_design_rule -boundary_optimization
 
 write_file -format verilog -hierarchy -output $design_name.netlist.v
 write_file -format ddc -output $design_name.ddc

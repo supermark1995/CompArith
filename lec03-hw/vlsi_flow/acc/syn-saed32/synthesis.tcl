@@ -66,7 +66,7 @@ set_wire_load_model -name "8000"
 #
 ################################################################################
 
-create_clock -name clk -period 5 [get_ports clk]
+create_clock -name clk -period 10 [get_ports clk]
 set_dont_touch_network [get_clocks clk]
 set_fix_hold [get_clocks clk]
 
@@ -78,7 +78,7 @@ set_fix_hold [get_clocks clk]
 #
 ################################################################################
 
-compile -map_effort high
+compile -no_design_rule
 
 write_file -format verilog -hierarchy -output $design_name.netlist.v
 write_file -format ddc -output $design_name.ddc

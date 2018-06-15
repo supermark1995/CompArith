@@ -78,7 +78,7 @@ set_fix_hold [get_clocks clk]
 #
 ################################################################################
 
-compile -no_design_rule
+compile -only_design_rule
 
 write_file -format verilog -hierarchy -output $design_name.netlist.v
 write_file -format ddc -output $design_name.ddc
