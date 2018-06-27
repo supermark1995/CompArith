@@ -98,7 +98,7 @@ VERILOG_FLAGS += $(DEBUG_FLAGS)
 vpath %.v $(RTL_DIR)
 
 
-sim.exe: test_CLA.v $(DESIGN_NAME).netlist.v 
+sim.exe: tb10000.v $(DESIGN_NAME).netlist.v 
 	$(VERILOG) $(VERILOG_FLAGS) $^ -o $@ 
 
 sim.out sim.vpd: sim.exe
