@@ -1,4 +1,4 @@
-This branch only change CompArith\lab03_Hierarchical_CLG\vlsi_flow\128-adder\sim
+This branch only change CompArith\lab03_Hierarchical_CLG\vlsi_flow\128-adder\sim 
 
 CHANGES:
 
