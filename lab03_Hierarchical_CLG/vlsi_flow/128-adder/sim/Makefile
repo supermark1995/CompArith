@@ -37,7 +37,7 @@ VERILOG_FLAGS += -full64 +v2k $(INC_FLAGS) +libext+.v+ $(DEBUG_FLAGS) #how about
 
 vpath %.v $(RTL_DIR)
 
-sim.exe: test_CLA.v adder_128bit.v CLA_64bit.v CLA_16bit.v CLA_4bit.v CLG_4bit.v Full_Adder.v 
+sim.exe: tb10000.v adder_128bit.v CLA_64bit.v CLA_16bit.v CLA_4bit.v CLG_4bit.v Full_Adder.v 
 	$(VERILOG) $(VERILOG_FLAGS) -o $@ $^
 
 #test_CLA.v adder_128bit.v CLA_64bit.v CLG_4bit.v CLA_16bit.v CLA_4bit.v Full_Adder.v  -- Hier CLA needs
